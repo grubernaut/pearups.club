@@ -1,7 +1,6 @@
 Warden::GitHub::Rails.setup do |config|
   config.add_scope :user,  client_id:     ENV['GITHUB_CLIENT_ID']     || '44e7bcbbe486236c8108',
-                           client_secret: ENV['GITHUB_CLIENT_SECRET'] || '947db7d6c9b6b24ef4de7e6b2c298b7846ea63b7
-',
+                           client_secret: ENV['GITHUB_CLIENT_SECRET'] || '947db7d6c9b6b24ef4de7e6b2c298b7846ea63b7',
                            scope:         'user:email'
 
   config.default_scope = :user
